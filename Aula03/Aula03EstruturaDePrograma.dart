@@ -4,6 +4,7 @@ main() {
   calculoImc();
 }
 
+//programa que calcula imc
 calculoImc() {
   print("Digite seu peso:");
   var textPeso = stdin.readLineSync();
@@ -20,10 +21,12 @@ calculoImc() {
   imprimirResultado(calc);
 }
 
+//recebe peso e altura e retorna imc
 double calcImc(int peso, double altura) {
   return peso / (altura * altura);
 }
 
+//imprimi o resultado
 imprimirResultado(calc) {
   if (calc < 18.5) {
     print("Abaixo do Peso");
